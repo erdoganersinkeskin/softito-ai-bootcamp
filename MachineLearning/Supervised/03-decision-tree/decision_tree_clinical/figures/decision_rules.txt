@@ -1,0 +1,79 @@
+|--- Price <= 5.00
+|   |--- positive_ratio <= 0.34
+|   |   |--- achievements <= 6.50
+|   |   |   |--- genre_enc <= 3.50
+|   |   |   |   |--- positive_ratio <= 0.24
+|   |   |   |   |   |--- class: Orta
+|   |   |   |   |--- positive_ratio >  0.24
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |--- genre_enc >  3.50
+|   |   |   |   |--- class: Yuksek
+|   |   |--- achievements >  6.50
+|   |   |   |--- class: Orta
+|   |--- positive_ratio >  0.34
+|   |   |--- positive_ratio <= 0.95
+|   |   |   |--- achievements <= 19.50
+|   |   |   |   |--- achievements <= 1.50
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |   |--- achievements >  1.50
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |--- achievements >  19.50
+|   |   |   |   |--- achievements <= 43.50
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |   |--- achievements >  43.50
+|   |   |   |   |   |--- class: Dusuk
+|   |   |--- positive_ratio >  0.95
+|   |   |   |--- achievements <= 0.50
+|   |   |   |   |--- genre_enc <= 3.50
+|   |   |   |   |   |--- class: Orta
+|   |   |   |   |--- genre_enc >  3.50
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |--- achievements >  0.50
+|   |   |   |   |--- achievements <= 17.50
+|   |   |   |   |   |--- class: Orta
+|   |   |   |   |--- achievements >  17.50
+|   |   |   |   |   |--- class: Yuksek
+|--- Price >  5.00
+|   |--- Price <= 45.50
+|   |   |--- achievements <= 33.50
+|   |   |   |--- achievements <= 0.50
+|   |   |   |   |--- positive_ratio <= 0.75
+|   |   |   |   |   |--- class: Orta
+|   |   |   |   |--- positive_ratio >  0.75
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |--- achievements >  0.50
+|   |   |   |   |--- achievements <= 12.50
+|   |   |   |   |   |--- class: Orta
+|   |   |   |   |--- achievements >  12.50
+|   |   |   |   |   |--- class: Orta
+|   |   |--- achievements >  33.50
+|   |   |   |--- platform_count <= 1.50
+|   |   |   |   |--- positive_ratio <= 0.90
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |   |--- positive_ratio >  0.90
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |--- platform_count >  1.50
+|   |   |   |   |--- class: Yuksek
+|   |--- Price >  45.50
+|   |   |--- achievements <= 45.50
+|   |   |   |--- achievements <= 1.50
+|   |   |   |   |--- positive_ratio <= 0.59
+|   |   |   |   |   |--- class: Orta
+|   |   |   |   |--- positive_ratio >  0.59
+|   |   |   |   |   |--- class: Orta
+|   |   |   |--- achievements >  1.50
+|   |   |   |   |--- positive_ratio <= 0.51
+|   |   |   |   |   |--- class: Orta
+|   |   |   |   |--- positive_ratio >  0.51
+|   |   |   |   |   |--- class: Orta
+|   |   |--- achievements >  45.50
+|   |   |   |--- Price <= 68.50
+|   |   |   |   |--- achievements <= 57.50
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |   |--- achievements >  57.50
+|   |   |   |   |   |--- class: Orta
+|   |   |   |--- Price >  68.50
+|   |   |   |   |--- positive_ratio <= 0.78
+|   |   |   |   |   |--- class: Orta
+|   |   |   |   |--- positive_ratio >  0.78
+|   |   |   |   |   |--- class: Orta

@@ -1,0 +1,85 @@
+services:
+  ml-linear:
+    build: .
+    container_name: ml-linear
+    command: python 1_linear_regression.py
+    ports:
+      - "5001:5001"
+    networks:
+      - ml-network
+
+  ml-knn:
+    build: .
+    container_name: ml-knn
+    command: python 2_knn_regressor.py
+    ports:
+      - "5002:5002"
+    networks:
+      - ml-network
+
+  ml-rf:
+    build: .
+    container_name: ml-rf
+    command: python 3_random_forest_regressor.py
+    ports:
+      - "5003:5003"
+    networks:
+      - ml-network
+
+  ml-dtree:
+    build: .
+    container_name: ml-dtree
+    command: python 4_decision_tree_classifier.py
+    ports:
+      - "5004:5004"
+    networks:
+      - ml-network
+
+  ml-svm:
+    build: .
+    container_name: ml-svm
+    command: python 5_svm_classifier.py
+    ports:
+      - "5005:5005"
+    networks:
+      - ml-network
+
+  ml-gateway:
+    image: python:3.13-slim
+    container_name: ml-gateway
+    restart: unless-stopped
+    command: >
+      sh -c "pip install flask requests &&
+      python -c \"
+      import os, requests
+      from flask import Flask, request, jsonify
+      app = Flask(__name__)
+      SERVICES = {'linear':'http://ml-linear:5001','knn':'http://ml-knn:5002','rf':'http://ml-rf:5003','dtree':'http://ml-dtree:5004','svm':'http://ml-svm:5005'}
+      @app.route('/health')
+      def health():
+          status = {}
+          for name, url in SERVICES.items():
+              try: status[name] = requests.get(url+'/health', timeout=3).json()
+              except Exception as e: status[name] = {'status':'unreachable','error':str(e)}
+          return jsonify({'gateway':'ok','services':status})
+      @app.route('/<service>/predict', methods=['POST'])
+      def predict(service):
+          if service not in SERVICES: return jsonify({'error':'unknown service'}), 404
+          r = requests.post(SERVICES[service]+'/predict', json=request.get_json(force=True), timeout=60)
+          return jsonify(r.json()), r.status_code
+      app.run(host='0.0.0.0', port=8080)
+      \""
+    ports:
+      - "8080:8080"
+    depends_on:
+      - ml-linear
+      - ml-knn
+      - ml-rf
+      - ml-dtree
+      - ml-svm
+    networks:
+      - ml-network
+
+networks:
+  ml-network:
+    driver: bridge

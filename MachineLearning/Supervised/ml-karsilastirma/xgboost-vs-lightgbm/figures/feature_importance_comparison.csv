@@ -1,0 +1,11 @@
+Feature,Importance,Model
+user_library_size,0.07435651868581772,XGBoost
+game_popularity,0.10661610215902328,XGBoost
+user_avg_hours,0.14301826059818268,XGBoost
+game_avg_hours,0.5887271165847778,XGBoost
+popularity_tier,0.08728203177452087,XGBoost
+user_library_size,0.2711488732914666,LightGBM
+game_popularity,0.2641300332471371,LightGBM
+user_avg_hours,0.23199113409678612,LightGBM
+game_avg_hours,0.23248368427533556,LightGBM
+popularity_tier,0.00024627508927471984,LightGBM

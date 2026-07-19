@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# ============================================================
+#  Uretilen log verisi (buyuk, tekrar uretilebilir)
+# ============================================================
+logs/
+
+# Spark ciktilari / gecici dosyalar
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+_SUCCESS
+
+# OS
+.DS_Store
+Thumbs.db

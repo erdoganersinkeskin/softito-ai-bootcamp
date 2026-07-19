@@ -1,0 +1,117 @@
+# Türkçe SLM + RAG Projesi - Merkezi Konfigürasyon
+# Bu dosya, projedeki tüm script'lerin (data_collection, train,
+# chunking, embedding vb.) okuduğu tek kaynak (single source of
+# truth) dosyasıdır. Yeni makale/kategori eklemek için kodu değil,
+# bu dosyayı değiştirmek yeterlidir.
+
+# 1) VERİ TOPLAMA (Faz 1 - data_collection.py tarafından okunur)
+wikipedia:
+  dil: "tr"
+  user_agent: "TurkceSLM-RAG/1.0 (egitim ve arastirma amacli)"
+
+  # Her kategori altında çekilecek Wikipedia makale başlıkları.
+  # Kategori isimleri aynı zamanda data/raw/ altında klasör adı olur.
+  #
+  # ÖĞRENME NOTU (yönlendirme): Bu liste, bilim/teknoloji kategorileri
+  # yerine OYUN DÜNYASI kategorileriyle
+  # değiştirilmiştir - script mantığı (Wikipedia'dan makale çekme,
+  # temizleme, tokenize etme, eğitme, RAG) BİREBİR aynı kalır, sadece
+  # KONU alanı değişir. Bazı başlıklar Türkçe Wikipedia'da farklı bir
+  # adla (veya hiç) bulunmayabilir - data_collection.py bulunamayan
+  # başlıkları otomatik atlar ("atlandi (bulunamadi)"), bu normaldir.
+  kategoriler:
+    video_oyunu_temelleri:
+      - "Video oyunu"
+      - "Bilgisayar oyunu"
+      - "Oyun motoru"
+      - "Oyun tasarımı"
+      - "Video oyunu geliştirme"
+      - "Mobil oyun"
+
+    oyun_turleri:
+      - "Aksiyon oyunu"
+      - "Rol yapma oyunu"
+      - "Strateji oyunu"
+      - "Bulmaca oyunu"
+      - "Yarış oyunu"
+      - "Platform oyunu"
+
+    konsol_ve_donanim:
+      - "Video oyunu konsolu"
+      - "PlayStation"
+      - "Xbox"
+      - "Nintendo Switch"
+      - "Atari 2600"
+
+    efsanevi_oyunlar:
+      - "Minecraft"
+      - "The Legend of Zelda"
+      - "Super Mario"
+      - "Tetris"
+      - "Grand Theft Auto"
+      - "Pac-Man"
+
+    oyun_sirketleri:
+      - "Nintendo"
+      - "Electronic Arts"
+      - "Ubisoft"
+      - "Sony Interactive Entertainment"
+
+    elektronik_spor:
+      - "Elektronik spor"
+      - "League of Legends"
+      - "Dota 2"
+      - "Counter-Strike"
+
+    oyun_tarihi:
+      - "Video oyunlarının tarihi"
+      - "Arcade oyunu"
+      - "Pong (video oyunu)"
+
+    oyun_platformlari:
+      - "Steam (dağıtım platformu)"
+      - "Sanal gerçeklik"
+      - "Bulut oyun"
+
+# 2) VERİ ÖN İŞLEME (preprocessing.py)
+preprocessing:
+  max_karakter: 500_000        # işlenecek toplam metnin üst sınırı
+  min_makale_uzunlugu: 200      # bu uzunluktan kısa makaleler atlanır
+
+# 3) TOKENIZER / DATASET
+dataset:
+  blok_uzunlugu: 128             # her eğitim örneğinin sekans uzunluğu
+  batch_boyutu: 64
+  egitim_orani: 0.9
+
+# 4) MODEL MİMARİSİ
+model:
+  gomme_boyutu: 128
+  katman_sayisi: 4              # transformer decoder blok sayısı
+  baslik_sayisi: 4              # multi-head attention baş sayısı
+  dropout: 0.2
+
+# 5) EĞİTİM
+egitim:
+  epoch_sayisi: 20
+  ogrenme_hizi: 0.001
+  weight_decay: 0.0001
+  seed: 42
+  cikti_checkpoint: "checkpoints/slm_model.pt"
+  cikti_figure: "figures/egitim_sonuclari.png"
+
+# 6) RAG (Faz 2 - chunking, embedding, retrieval)
+rag:
+  chunk_boyutu_kelime: 200      # her pasajın hedef kelime sayısı
+  chunk_ortusme_kelime: 30      # ardışık pasajlar arası örtüşme
+  embedding_modeli: "tfidf"     # "tfidf" | "sentence-transformers"
+  top_k: 3                      # her soru için getirilecek pasaj sayısı
+  chunks_dosyasi: "data/processed/chunks.jsonl"
+  embedding_dosyasi: "data/processed/embeddings.npy"
+
+# 7) YOLLAR (path'ler)
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  metadata_file: "data/metadata.json"
+  temiz_metin_file: "data/processed/temiz_metin.txt"

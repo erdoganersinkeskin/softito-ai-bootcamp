@@ -1,0 +1,240 @@
+[
+  {
+    "baslik": "Video oyunu",
+    "kategori": "video_oyunu_temelleri",
+    "dosya_yolu": "data\\raw\\video_oyunu_temelleri\\video_oyunu.txt",
+    "karakter_sayisi": 4169,
+    "cekilme_tarihi": "2026-07-17T11:29:25.799938"
+  },
+  {
+    "baslik": "Bilgisayar oyunu",
+    "kategori": "video_oyunu_temelleri",
+    "dosya_yolu": "data\\raw\\video_oyunu_temelleri\\bilgisayar_oyunu.txt",
+    "karakter_sayisi": 1309,
+    "cekilme_tarihi": "2026-07-17T11:29:26.402904"
+  },
+  {
+    "baslik": "Oyun motoru",
+    "kategori": "video_oyunu_temelleri",
+    "dosya_yolu": "data\\raw\\video_oyunu_temelleri\\oyun_motoru.txt",
+    "karakter_sayisi": 1059,
+    "cekilme_tarihi": "2026-07-17T11:29:27.052403"
+  },
+  {
+    "baslik": "Oyun tasarımı",
+    "kategori": "video_oyunu_temelleri",
+    "dosya_yolu": "data\\raw\\video_oyunu_temelleri\\oyun_tasarımı.txt",
+    "karakter_sayisi": 1014,
+    "cekilme_tarihi": "2026-07-17T11:29:27.859592"
+  },
+  {
+    "baslik": "Video oyunu geliştirme",
+    "kategori": "video_oyunu_temelleri",
+    "dosya_yolu": "data\\raw\\video_oyunu_temelleri\\video_oyunu_geliştirme.txt",
+    "karakter_sayisi": 2080,
+    "cekilme_tarihi": "2026-07-17T11:29:28.485678"
+  },
+  {
+    "baslik": "Mobil oyun",
+    "kategori": "video_oyunu_temelleri",
+    "dosya_yolu": "data\\raw\\video_oyunu_temelleri\\mobil_oyun.txt",
+    "karakter_sayisi": 462,
+    "cekilme_tarihi": "2026-07-17T11:29:29.075308"
+  },
+  {
+    "baslik": "Aksiyon oyunu",
+    "kategori": "oyun_turleri",
+    "dosya_yolu": "data\\raw\\oyun_turleri\\aksiyon_oyunu.txt",
+    "karakter_sayisi": 1296,
+    "cekilme_tarihi": "2026-07-17T11:29:29.723994"
+  },
+  {
+    "baslik": "Rol yapma oyunu",
+    "kategori": "oyun_turleri",
+    "dosya_yolu": "data\\raw\\oyun_turleri\\rol_yapma_oyunu.txt",
+    "karakter_sayisi": 10959,
+    "cekilme_tarihi": "2026-07-17T11:29:41.534847"
+  },
+  {
+    "baslik": "Strateji oyunu",
+    "kategori": "oyun_turleri",
+    "dosya_yolu": "data\\raw\\oyun_turleri\\strateji_oyunu.txt",
+    "karakter_sayisi": 2308,
+    "cekilme_tarihi": "2026-07-17T11:29:42.150037"
+  },
+  {
+    "baslik": "Bulmaca oyunu",
+    "kategori": "oyun_turleri",
+    "dosya_yolu": "data\\raw\\oyun_turleri\\bulmaca_oyunu.txt",
+    "karakter_sayisi": 1800,
+    "cekilme_tarihi": "2026-07-17T11:29:42.744495"
+  },
+  {
+    "baslik": "Yarış oyunu",
+    "kategori": "oyun_turleri",
+    "dosya_yolu": "data\\raw\\oyun_turleri\\yarış_oyunu.txt",
+    "karakter_sayisi": 431,
+    "cekilme_tarihi": "2026-07-17T11:29:43.387943"
+  },
+  {
+    "baslik": "Platform oyunu",
+    "kategori": "oyun_turleri",
+    "dosya_yolu": "data\\raw\\oyun_turleri\\platform_oyunu.txt",
+    "karakter_sayisi": 2114,
+    "cekilme_tarihi": "2026-07-17T11:29:44.001326"
+  },
+  {
+    "baslik": "Video oyunu konsolu",
+    "kategori": "konsol_ve_donanim",
+    "dosya_yolu": "data\\raw\\konsol_ve_donanim\\video_oyunu_konsolu.txt",
+    "karakter_sayisi": 7939,
+    "cekilme_tarihi": "2026-07-17T11:29:44.633110"
+  },
+  {
+    "baslik": "PlayStation",
+    "kategori": "konsol_ve_donanim",
+    "dosya_yolu": "data\\raw\\konsol_ve_donanim\\playstation.txt",
+    "karakter_sayisi": 2549,
+    "cekilme_tarihi": "2026-07-17T11:29:45.229997"
+  },
+  {
+    "baslik": "Xbox",
+    "kategori": "konsol_ve_donanim",
+    "dosya_yolu": "data\\raw\\konsol_ve_donanim\\xbox.txt",
+    "karakter_sayisi": 2668,
+    "cekilme_tarihi": "2026-07-17T11:29:45.823413"
+  },
+  {
+    "baslik": "Nintendo Switch",
+    "kategori": "konsol_ve_donanim",
+    "dosya_yolu": "data\\raw\\konsol_ve_donanim\\nintendo_switch.txt",
+    "karakter_sayisi": 4003,
+    "cekilme_tarihi": "2026-07-17T11:29:46.438510"
+  },
+  {
+    "baslik": "Atari 2600",
+    "kategori": "konsol_ve_donanim",
+    "dosya_yolu": "data\\raw\\konsol_ve_donanim\\atari_2600.txt",
+    "karakter_sayisi": 597,
+    "cekilme_tarihi": "2026-07-17T11:29:47.010322"
+  },
+  {
+    "baslik": "Minecraft",
+    "kategori": "efsanevi_oyunlar",
+    "dosya_yolu": "data\\raw\\efsanevi_oyunlar\\minecraft.txt",
+    "karakter_sayisi": 40761,
+    "cekilme_tarihi": "2026-07-17T11:29:47.866871"
+  },
+  {
+    "baslik": "The Legend of Zelda",
+    "kategori": "efsanevi_oyunlar",
+    "dosya_yolu": "data\\raw\\efsanevi_oyunlar\\the_legend_of_zelda.txt",
+    "karakter_sayisi": 4869,
+    "cekilme_tarihi": "2026-07-17T11:29:48.501824"
+  },
+  {
+    "baslik": "Super Mario",
+    "kategori": "efsanevi_oyunlar",
+    "dosya_yolu": "data\\raw\\efsanevi_oyunlar\\super_mario.txt",
+    "karakter_sayisi": 1343,
+    "cekilme_tarihi": "2026-07-17T11:29:49.151230"
+  },
+  {
+    "baslik": "Tetris",
+    "kategori": "efsanevi_oyunlar",
+    "dosya_yolu": "data\\raw\\efsanevi_oyunlar\\tetris.txt",
+    "karakter_sayisi": 2242,
+    "cekilme_tarihi": "2026-07-17T11:29:49.773463"
+  },
+  {
+    "baslik": "Grand Theft Auto",
+    "kategori": "efsanevi_oyunlar",
+    "dosya_yolu": "data\\raw\\efsanevi_oyunlar\\grand_theft_auto.txt",
+    "karakter_sayisi": 4772,
+    "cekilme_tarihi": "2026-07-17T11:29:50.378319"
+  },
+  {
+    "baslik": "Pac-Man",
+    "kategori": "efsanevi_oyunlar",
+    "dosya_yolu": "data\\raw\\efsanevi_oyunlar\\pacman.txt",
+    "karakter_sayisi": 1545,
+    "cekilme_tarihi": "2026-07-17T11:29:50.996112"
+  },
+  {
+    "baslik": "Nintendo",
+    "kategori": "oyun_sirketleri",
+    "dosya_yolu": "data\\raw\\oyun_sirketleri\\nintendo.txt",
+    "karakter_sayisi": 12368,
+    "cekilme_tarihi": "2026-07-17T11:29:51.676036"
+  },
+  {
+    "baslik": "Electronic Arts",
+    "kategori": "oyun_sirketleri",
+    "dosya_yolu": "data\\raw\\oyun_sirketleri\\electronic_arts.txt",
+    "karakter_sayisi": 3199,
+    "cekilme_tarihi": "2026-07-17T11:29:52.800789"
+  },
+  {
+    "baslik": "Ubisoft",
+    "kategori": "oyun_sirketleri",
+    "dosya_yolu": "data\\raw\\oyun_sirketleri\\ubisoft.txt",
+    "karakter_sayisi": 1901,
+    "cekilme_tarihi": "2026-07-17T11:29:53.681427"
+  },
+  {
+    "baslik": "Sony Interactive Entertainment",
+    "kategori": "oyun_sirketleri",
+    "dosya_yolu": "data\\raw\\oyun_sirketleri\\sony_interactive_entertainment.txt",
+    "karakter_sayisi": 2920,
+    "cekilme_tarihi": "2026-07-17T11:29:54.359939"
+  },
+  {
+    "baslik": "Elektronik spor",
+    "kategori": "elektronik_spor",
+    "dosya_yolu": "data\\raw\\elektronik_spor\\elektronik_spor.txt",
+    "karakter_sayisi": 54347,
+    "cekilme_tarihi": "2026-07-17T11:29:55.255771"
+  },
+  {
+    "baslik": "League of Legends",
+    "kategori": "elektronik_spor",
+    "dosya_yolu": "data\\raw\\elektronik_spor\\league_of_legends.txt",
+    "karakter_sayisi": 22877,
+    "cekilme_tarihi": "2026-07-17T11:29:56.016050"
+  },
+  {
+    "baslik": "Dota 2",
+    "kategori": "elektronik_spor",
+    "dosya_yolu": "data\\raw\\elektronik_spor\\dota_2.txt",
+    "karakter_sayisi": 10789,
+    "cekilme_tarihi": "2026-07-17T11:29:56.770155"
+  },
+  {
+    "baslik": "Counter-Strike",
+    "kategori": "elektronik_spor",
+    "dosya_yolu": "data\\raw\\elektronik_spor\\counterstrike.txt",
+    "karakter_sayisi": 4159,
+    "cekilme_tarihi": "2026-07-17T11:29:57.390492"
+  },
+  {
+    "baslik": "Arcade oyunu",
+    "kategori": "oyun_tarihi",
+    "dosya_yolu": "data\\raw\\oyun_tarihi\\arcade_oyunu.txt",
+    "karakter_sayisi": 1562,
+    "cekilme_tarihi": "2026-07-17T11:29:58.246405"
+  },
+  {
+    "baslik": "Sanal gerçeklik",
+    "kategori": "oyun_platformlari",
+    "dosya_yolu": "data\\raw\\oyun_platformlari\\sanal_gerçeklik.txt",
+    "karakter_sayisi": 4254,
+    "cekilme_tarihi": "2026-07-17T11:29:59.279160"
+  },
+  {
+    "baslik": "Bulut oyun",
+    "kategori": "oyun_platformlari",
+    "dosya_yolu": "data\\raw\\oyun_platformlari\\bulut_oyun.txt",
+    "karakter_sayisi": 776,
+    "cekilme_tarihi": "2026-07-17T11:29:59.960433"
+  }
+]

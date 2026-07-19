@@ -1,0 +1,106 @@
+|--- size_mb <= 87.09
+|   |--- size_mb <= 17.57
+|   |   |--- primary_genre_enc <= 6.50
+|   |   |   |--- age_rating_numeric <= 10.50
+|   |   |   |   |--- language_count <= 5.50
+|   |   |   |   |   |--- Average User Rating <= 4.25
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- Average User Rating >  4.25
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- language_count >  5.50
+|   |   |   |   |   |--- language_count <= 13.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- language_count >  13.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- age_rating_numeric >  10.50
+|   |   |   |   |--- User Rating Count <= 49.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- User Rating Count >  49.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- primary_genre_enc >  6.50
+|   |   |   |--- class: 0
+|   |--- size_mb >  17.57
+|   |   |--- primary_genre_enc <= 1.50
+|   |   |   |--- class: 1
+|   |   |--- primary_genre_enc >  1.50
+|   |   |   |--- User Rating Count <= 8.50
+|   |   |   |   |--- Average User Rating <= 3.25
+|   |   |   |   |   |--- User Rating Count <= 6.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- User Rating Count >  6.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Average User Rating >  3.25
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- User Rating Count >  8.50
+|   |   |   |   |--- iap_count <= 4.50
+|   |   |   |   |   |--- size_mb <= 75.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- size_mb >  75.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- iap_count >  4.50
+|   |   |   |   |   |--- iap_count <= 8.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- iap_count >  8.50
+|   |   |   |   |   |   |--- class: 0
+|--- size_mb >  87.09
+|   |--- iap_count <= 1.50
+|   |   |--- size_mb <= 1250.35
+|   |   |   |--- size_mb <= 555.89
+|   |   |   |   |--- User Rating Count <= 11.50
+|   |   |   |   |   |--- language_count <= 2.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- language_count >  2.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- User Rating Count >  11.50
+|   |   |   |   |   |--- age_rating_numeric <= 6.50
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- age_rating_numeric >  6.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- size_mb >  555.89
+|   |   |   |   |--- size_mb <= 738.83
+|   |   |   |   |   |--- size_mb <= 586.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- size_mb >  586.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- size_mb >  738.83
+|   |   |   |   |   |--- User Rating Count <= 42.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- User Rating Count >  42.00
+|   |   |   |   |   |   |--- class: 2
+|   |   |--- size_mb >  1250.35
+|   |   |   |--- User Rating Count <= 37.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- User Rating Count >  37.50
+|   |   |   |   |--- class: 2
+|   |--- iap_count >  1.50
+|   |   |--- size_mb <= 380.57
+|   |   |   |--- User Rating Count <= 33.50
+|   |   |   |   |--- language_count <= 16.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- language_count >  16.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- User Rating Count >  33.50
+|   |   |   |   |--- iap_count <= 4.50
+|   |   |   |   |   |--- User Rating Count <= 59.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- User Rating Count >  59.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- iap_count >  4.50
+|   |   |   |   |   |--- size_mb <= 253.46
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- size_mb >  253.46
+|   |   |   |   |   |   |--- class: 0
+|   |   |--- size_mb >  380.57
+|   |   |   |--- User Rating Count <= 18.00
+|   |   |   |   |--- class: 0
+|   |   |   |--- User Rating Count >  18.00
+|   |   |   |   |--- size_mb <= 912.51
+|   |   |   |   |   |--- User Rating Count <= 171.00
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- User Rating Count >  171.00
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- size_mb >  912.51
+|   |   |   |   |   |--- age_rating_numeric <= 10.50
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- age_rating_numeric >  10.50
+|   |   |   |   |   |   |--- class: 2

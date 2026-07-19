@@ -1,9 +1,10 @@
 
 # folder to ignore
 temp
+articles
+medium-articles
 
 # file to ignore
-
-
-
-
+*.bin
+*.npy
+*.model

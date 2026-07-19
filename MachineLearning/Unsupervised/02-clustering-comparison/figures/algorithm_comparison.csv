@@ -1,0 +1,5 @@
+Algoritma,Silhouette_Skoru,Kume_Sayisi
+K-Means,0.4821007350987341,4
+Hiyerarsik (Agglomerative),0.40376183409988237,4
+DBSCAN,,1
+Gaussian Mixture Model,0.2137466204197338,4

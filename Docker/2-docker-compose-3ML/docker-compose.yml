@@ -1,0 +1,31 @@
+services:
+
+  # --- ML: Regression ---
+  ml_xgboost:
+    build: .
+    container_name: ml_xgboost
+    command: python ml_xgboost.py
+    volumes:
+      - ml_output:/app/output
+    restart: "no"
+
+  # --- ML: Classification ---
+  ml_logistic_regression:
+    build: .
+    container_name: ml_logistic_regression
+    command: python ml_logistic_regression.py
+    volumes:
+      - ml_output:/app/output
+    restart: "no"
+
+  # --- ML: Clustering ---
+  ml_kmeans:
+    build: .
+    container_name: ml_kmeans
+    command: python ml_kmeans.py
+    volumes:
+      - ml_output:/app/output
+    restart: "no"
+
+volumes:
+  ml_output:

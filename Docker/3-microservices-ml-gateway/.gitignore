@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Script/servis ciktilari (yeniden uretilebilir)
+output/*
+!output/.gitkeep
+
+*.log
+
+# ============================================================
+#  Kaggle'dan indirilen veri (prepare_dataset.py ile yeniden uretilir)
+# ============================================================
+steam_games.csv
+
+# OS
+.DS_Store
+Thumbs.db

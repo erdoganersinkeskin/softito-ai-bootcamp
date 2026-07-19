@@ -1,0 +1,12 @@
+# --- Core data / ML ---
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+xgboost>=2.0
+
+# --- Visualization ---
+matplotlib>=3.8
+seaborn>=0.13
+
+# --- Veri setini Kaggle'dan indirmek icin (prepare_dataset.py, host'ta calisir) ---
+kagglehub>=0.3
